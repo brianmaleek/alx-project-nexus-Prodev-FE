@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "movieApp",
+    "slug": "movieApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logoApp.png",
+    "scheme": "movies",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.brianmaleek.movieApp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "server",
+      "bundler": "metro",
+      "favicon": "./assets/images/logoApp.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "02c0b3f8-c7d9-45aa-b500-f2d9431e6658"
+      }
+    }
+  }
+}
